@@ -14,7 +14,7 @@ export class HomePage extends BasePage {
     async goToHomePage() {
         await this.page.goto("/")
         await this.cookieConsentAccept()
-        await this.page.waitForLoadState('networkidle')
+        await this.page.waitForLoadState('load')
         await expect(this.page).toHaveURL(expectedUrl)
     } 
 }

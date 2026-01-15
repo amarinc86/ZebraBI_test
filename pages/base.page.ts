@@ -1,4 +1,4 @@
-import { Page, Locator } from "@playwright/test"
+import { Page, Locator, test } from "@playwright/test"
 import { Navbar } from "./components/navbar"
 
 export class BasePage {
@@ -14,9 +14,9 @@ export class BasePage {
     
     async cookieConsentAccept() {
         try {
-            await this.allowAllBtn.click({timeout: 1000})
+            await this.allowAllBtn.click({timeout: 3000})
         } catch (e) {
-            console.log("No cookie consent. Skip. Error: ", e)
+            test.info().annotations.push({type: "info", description: "Cookie consent skipped"})
         }
     }
 }
