@@ -11,7 +11,7 @@ This project contains a Playwright script that does the following:
 2. Verify that:
    - The Zebra BI logo is displayed
    - The Login button is displayed
-   - The "Try Zebra BI for free" button is displayed twice
+   - The "Try Zebra BI for free" buttons are displayed (3x)
 
 3. Click the "Try Zebra BI for free" button
 
@@ -26,7 +26,3 @@ This project contains a Playwright script that does the following:
    - Zebra BI for Power BI is displayed with a "See the pricing plan" button
    - Zebra BI for Office is displayed with a "See the pricing plan" button
    - Zebra AI is displayed with a "See the pricing plan" button
-
-## Test Structure
-
-tbd
